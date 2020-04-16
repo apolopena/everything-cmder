@@ -15,6 +15,7 @@ Anyone that may have an opinion on how to do things better (optimize) or to add 
   - __General__
     - Advanced Bash-Scripting Guide: [Why Shell Programming?](https://linux.die.net/abs-guide/why-shell.html)
     - Text Sculpting: [A brief introduction to grep, awk & sed](http://blog.cee.moe/a-brief-introduction-to-grep-awk-and-sed.html)
+    - [`tldr` pages: Simplified and community-driven man pages](https://tldr.sh/)
   - __`sed`__
     - [Probaly the best `sed` guide out there](https://www.grymoire.com/Unix/Sed.html)
     - Practice `sed` in realtime using a [`sed` REPL (sandbox) online editor](https://sed.js.org/).
@@ -22,3 +23,5 @@ Anyone that may have an opinion on how to do things better (optimize) or to add 
   - __`grep`__
     - GNU docs for [`grep` 3.4](https://www.gnu.org/software/grep/manual/grep.html)
     - [How to prevent grep from printing the same string multiple times](https://askubuntu.com/questions/681649/how-to-prevent-grep-from-printing-the-same-string-multiple-times)
+  - __`tr`__: A command line utility for translating or deleting characters. Great for newline substitutions since `sed` is not designed for this and the `sed` syntax for translation involving the \n character is convoluted.
+    - [`tr` command in unix linux with examples](https://www.geeksforgeeks.org/tr-command-in-unix-linux-with-examples/)
