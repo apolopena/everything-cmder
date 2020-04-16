@@ -19,13 +19,16 @@ Anyone that may have an opinion on how to do things better (optimize) or to add 
   - __General__
     - Advanced Bash-Scripting Guide: [Why Shell Programming?](https://linux.die.net/abs-guide/why-shell.html)
     - Text Sculpting: [A brief introduction to grep, awk & sed](http://blog.cee.moe/a-brief-introduction-to-grep-awk-and-sed.html)
-    - [`tldr` pages: Simplified and community-driven man pages](https://tldr.sh/)
-  - __`sed`__
-    - [Probaly the best `sed` guide out there](https://www.grymoire.com/Unix/Sed.html)
-    - Practice `sed` in realtime using a [`sed` REPL (sandbox) online editor](https://sed.js.org/).
+    - [TLDR pages: Simplified and community-driven man pages](https://tldr.sh/)
+      - TLDR pages give multiple usage examples of each \*NIX style command that the console supports.
+  - __`sed`__: Stands for **S**tream **E**ditor. `sed` works with streams of characters for searching, filtering and text processing and despite its power, `sed` is considered a 'simpleton' when compared to `awk`. It is recommended to use `sed` for simple regex type operations and one-liners as `sed` syntax is more terse and compact than `awk` syntax. Complex multiline `sed` scripts can look noisy and be harder to read than `awk` programs.
+    - [Probably the best `sed` guide out there](https://www.grymoire.com/Unix/Sed.html)
+    - Practice `sed` in real-time using a [`sed` REPL (sandbox) online editor](https://sed.js.org/).
     - The more formal [GNU `sed` documentation](https://www.gnu.org/software/sed/manual/html_node/Regular-Expressions.html#Regular-Expressions).
-  - __`grep`__
+  - __`awk`__: Is a text pattern scanning and processing language, which was created by **A**ho, **W**einberger & **K**ernighan. `awk` is mostly used for data extraction and reporting, was built around processing .csv files. `awk` is considered more robust than `sed`. `awk` can do everything that `sed` can do and much more since `awk` is essentially a full fledged programming language complete with system calls, and sophisticated constructs such as if/else, while, do/while, etc.
+    - Practice `awk` in real-time using an [`awk` REPL (sandbox) online editor](https://awk.js.org/)
+  - __`grep`__: Stands for **G**lobal **R**egular **E**xpression **P**rint and is used to search for specific terms in a file. Different from `awk` and `sed`, `grep` cannot add/modify/remove the text in a specific file. But it’s useful when you just want to search and filter out matches.
     - GNU docs for [`grep` 3.4](https://www.gnu.org/software/grep/manual/grep.html)
     - [How to prevent grep from printing the same string multiple times](https://askubuntu.com/questions/681649/how-to-prevent-grep-from-printing-the-same-string-multiple-times)
-  - __`tr`__: A command line utility for translating or deleting characters. Great for newline substitutions since `sed` is not designed for this and the `sed` syntax for translation involving the \n character is convoluted.
+  - __`tr`__: A command line utility for translating or deleting characters. Great for newline substitutions since `sed` is not designed for this and the `sed` syntax for translation involving the `\n` character is convoluted because it has a harder ro read escape sequence for the newline character. For example, if you wanted to output all the windows paths, each other their own line by replacing all instances of a semicolon with a `\n`, in `sed` it would look like much less readable: `path | sed -e $'s/,/\\\n/g'` than using `tr` to do the same thing: `path | tr ; '\n'`.
     - [`tr` command in \*NIX with examples](https://www.geeksforgeeks.org/tr-command-in-unix-linux-with-examples/)
