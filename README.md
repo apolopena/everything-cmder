@@ -13,7 +13,8 @@ Anyone that may have an opinion on how to do things better (optimize) or to add 
 # Resources
 - Cmder
   - Link Windows executables such as `find` to the console commands in Cmder.
-    - Add the following to your `\Cmder\config\user_profile.cmd` `"PATH=%GIT_INSTALL_ROOT%\usr\bin;%PATH%"`. [Reference](https://superuser.com/questions/1219129/unix-find-command-on-cmder-exe-in-windows).
+    - Add the following to your `\Cmder\config\user_profile.cmd` file: 
+      - `set "PATH=%GIT_INSTALL_ROOT%\usr\bin;%PATH%"`. [Reference](https://superuser.com/questions/1219129/unix-find-command-on-cmder-exe-in-windows).
 - \*NIX Tools
   - __General__
     - Advanced Bash-Scripting Guide: [Why Shell Programming?](https://linux.die.net/abs-guide/why-shell.html)
