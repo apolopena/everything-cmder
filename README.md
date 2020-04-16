@@ -11,6 +11,9 @@ This repository is meant to be a relatively random compilation, a somewhat organ
 Anyone that may have an opinion on how to do things better (optimize) or to add any resources to this repository please feel free to open pull requests anywhere you like.
 
 # Resources
+- Cmder
+  - Link Windows executables such as `find` to the console commands in Cmder.
+    - Add the following to your `\Cmder\config\user_profile.cmd` `"PATH=%GIT_INSTALL_ROOT%\usr\bin;%PATH%"`. [Reference](https://superuser.com/questions/1219129/unix-find-command-on-cmder-exe-in-windows).
 - \*NIX Tools
   - __General__
     - Advanced Bash-Scripting Guide: [Why Shell Programming?](https://linux.die.net/abs-guide/why-shell.html)
@@ -24,4 +27,4 @@ Anyone that may have an opinion on how to do things better (optimize) or to add 
     - GNU docs for [`grep` 3.4](https://www.gnu.org/software/grep/manual/grep.html)
     - [How to prevent grep from printing the same string multiple times](https://askubuntu.com/questions/681649/how-to-prevent-grep-from-printing-the-same-string-multiple-times)
   - __`tr`__: A command line utility for translating or deleting characters. Great for newline substitutions since `sed` is not designed for this and the `sed` syntax for translation involving the \n character is convoluted.
-    - [`tr` command in unix linux with examples](https://www.geeksforgeeks.org/tr-command-in-unix-linux-with-examples/)
+    - [`tr` command in \*NIX with examples](https://www.geeksforgeeks.org/tr-command-in-unix-linux-with-examples/)
