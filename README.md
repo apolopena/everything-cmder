@@ -8,4 +8,17 @@ It suggested that you perouse this document however you see fit. You may also do
 
 This repository is meant to be a relatively random compilation, a somewhat organized mishmosh if you will, of scripts, resources, learning materials, personal findings and revelations that may or may not be 'correct' or optimized but could easily help one learn alot and hopefully help ones workflow to solve some daily challenges that one may encounter.
 
-Anyone that may have an opinion on how to do things better (optimize) or to add any resources to this repository please feel free to open pull requests anywhere you like. 
+Anyone that may have an opinion on how to do things better (optimize) or to add any resources to this repository please feel free to open pull requests anywhere you like.
+
+# Resources
+- \*NIX Tools
+  - __General__
+    - Advanced Bash-Scripting Guide: [Why Shell Programming?](https://linux.die.net/abs-guide/why-shell.html)
+    - Text Sculpting: [A brief introduction to grep, awk & sed](http://blog.cee.moe/a-brief-introduction-to-grep-awk-and-sed.html)
+  - __`sed`__
+    - [Probaly the best `sed` guide out there](https://www.grymoire.com/Unix/Sed.html)
+    - Practice `sed` in realtime using a [`sed` REPL (sandbox) online editor](https://sed.js.org/).
+    - The more formal [GNU `sed` documentation](https://www.gnu.org/software/sed/manual/html_node/Regular-Expressions.html#Regular-Expressions).
+  - __`grep`__
+    - GNU docs for [`grep` 3.4](https://www.gnu.org/software/grep/manual/grep.html)
+    - [How to prevent grep from printing the same string multiple times](https://askubuntu.com/questions/681649/how-to-prevent-grep-from-printing-the-same-string-multiple-times)
