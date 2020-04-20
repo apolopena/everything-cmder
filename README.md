@@ -13,11 +13,13 @@ Anyone that may have an opinion on how to do things better (optimize) or to add 
 # Resources
 - General
   - [What's the difference between terminal, shell, command line, and bash?](https://www.reddit.com/r/learnprogramming/comments/6xr0l9/whats_the_difference_between_terminal_shell/)
-  - [Shell Style Guide](http://google.github.io/styleguide/shellguide.html) Authored, revised and maintained by many Googlers.
 - Cmder
   - Link Windows executables such as `find` to the console commands in Cmder.
     - Add the following to your `\Cmder\config\user_profile.cmd` file: 
       - `set "PATH=%GIT_INSTALL_ROOT%\usr\bin;%PATH%"`. [Reference](https://superuser.com/questions/1219129/unix-find-command-on-cmder-exe-in-windows).
+- Bash Scripting
+  - [Shell Style Guide](http://google.github.io/styleguide/shellguide.html) Authored, revised and maintained by many Googlers.
+  - [Bash Scripting Snippets](https://github.com/bertvv/dotfiles/blob/master/.vim/UltiSnips/sh.snippets#L52)
 - \*NIX Tools
   - __General__
     - Advanced Bash-Scripting Guide: [Why Shell Programming?](https://linux.die.net/abs-guide/why-shell.html)
