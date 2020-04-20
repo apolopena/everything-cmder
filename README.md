@@ -20,6 +20,7 @@ Anyone that may have an opinion on how to do things better (optimize) or to add 
 - Bash Scripting
   - [Shell Style Guide](http://google.github.io/styleguide/shellguide.html) Authored, revised and maintained by many Googlers.
   - [Bash Scripting Snippets](https://github.com/bertvv/dotfiles/blob/master/.vim/UltiSnips/sh.snippets#L52)
+  - [Bash Cheat Sheet 1](https://bertvv.github.io/cheat-sheets/Bash.html)
 - \*NIX Tools
   - __General__
     - Advanced Bash-Scripting Guide: [Why Shell Programming?](https://linux.die.net/abs-guide/why-shell.html)
