@@ -13,6 +13,7 @@ Anyone that may have an opinion on how to do things better (optimize) or to add 
 # Resources
 - General
   - [What's the difference between terminal, shell, command line, and bash?](https://www.reddit.com/r/learnprogramming/comments/6xr0l9/whats_the_difference_between_terminal_shell/)
+  - [Shell Style Guide](http://google.github.io/styleguide/shellguide.html) Authored, revised and maintained by many Googlers.
 - Cmder
   - Link Windows executables such as `find` to the console commands in Cmder.
     - Add the following to your `\Cmder\config\user_profile.cmd` file: 
