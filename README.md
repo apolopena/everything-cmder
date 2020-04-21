@@ -1,8 +1,9 @@
 # Why Cmder?
 Rather than list my opinion of all the pros and cons of [Cmder](https://cmder.net/) and trying to sell you on using it. I will let the software speak for itself if you decide to use it. Simply put, I prefer using the full version of [Cmder](https://cmder.net/) bundled with [git-for-windows](https://gitforwindows.org/) because I find it to be robust, fast, and have *easy* access to the Windows filesystem. Cmder runs nativley, unlike [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10) (Windows Subsystem for Linux) which runs in a sandbox and makes access to the Windows file system convoluted. Allthough WSL is more robust for using *NIX style tools, I find that being confined to a Linux sandbox in the Windows environment for *__all__* my daily development tasks to be slower on the I\O side of things and somewhat defeats the purpose of using Windows 10 in the first place.
 
-After reading this first paragraph one may ask: Why use Unix style tools at all? Personally I just don't prefer the [Powershell](https://en.wikipedia.org/wiki/PowerShell) syntax and learning curve. Perhaps someday if I find myself exclusivley building Windows tools I will invest the time in becoming versed in the ways of Powershell but until then, for my day to day tasks and simple tool building I will stick with Cmder.
-
+# Why not Powershell?
+If you are working in the Windows environment then why use Unix style tools at all? Personally I find the [Powershell](https://en.wikipedia.org/wiki/PowerShell) syntax, learning curve and [encoding caveats](https://stackoverflow.com/questions/40098771/changing-powershells-default-output-encoding-to-utf-8) a bit of a hurdle and just not as versatile as \*NIX tools. At times I do find myself working with Powershell in Cmder and I will say that the more I learn the better off I am because of it. I will be sharing what I have learned about Powershell here on this page and you will find some powershell scripts in the repository.
+__TLDR;__ Powershell is awesome and can be integrated with Cmder. A well rounded scripter will be fluent in as many tools as possible.
 # How to Use This Repository
 It suggested that you perouse this document however you see fit. You may also download or copy and paste any portion of any of the files in this repository to fit your needs. Much of this document may be crafted for beginner and intermediate developers in the form of linear step lists, however I am sure that expert developers can probably gleam a few gems from this repository.
 
@@ -38,3 +39,6 @@ Anyone that may have an opinion on how to do things better (optimize) or to add 
     - [How to prevent grep from printing the same string multiple times](https://askubuntu.com/questions/681649/how-to-prevent-grep-from-printing-the-same-string-multiple-times)
   - __`tr`__: A command line utility for translating or deleting characters. Great for newline substitutions since `sed` is not designed for this and the `sed` syntax for translation involving the `\n` character is convoluted because it has a harder ro read escape sequence for the newline character. For example, if you wanted to output all the windows paths, each other their own line by replacing all instances of a semicolon with a `\n`, in `sed` it would look like much less readable: `path | sed -e $'s/,/\\\n/g'` than using `tr` to do the same thing: `path | tr ; '\n'`.
     - [`tr` command in \*NIX with examples](https://www.geeksforgeeks.org/tr-command-in-unix-linux-with-examples/)
+- Powershell
+  - Encoding
+    - [A good post on utf 8](https://stackoverflow.com/questions/40098771/changing-powershells-default-output-encoding-to-utf-8)
