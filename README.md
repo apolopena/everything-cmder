@@ -48,3 +48,5 @@ Anyone that may have an opinion on how to do things better (optimize) or to add 
     - [Adding and removing keyboard languages with powershell](https://4sysops.com/archives/adding-and-removing-keyboard-languages-with-powershell/)
   - Error Handling
     - [https://stackoverflow.com/questions/1142211/try-catch-does-not-seem-to-have-an-effect](https://stackoverflow.com/questions/1142211/try-catch-does-not-seem-to-have-an-effect)
+    - [Handling DISM.exe errors (external programs)](https://stackoverflow.com/questions/42284314/handle-dism-errors-from-powershell-script)
+
