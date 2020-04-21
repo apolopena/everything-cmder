@@ -39,6 +39,12 @@ Anyone that may have an opinion on how to do things better (optimize) or to add 
     - [How to prevent grep from printing the same string multiple times](https://askubuntu.com/questions/681649/how-to-prevent-grep-from-printing-the-same-string-multiple-times)
   - __`tr`__: A command line utility for translating or deleting characters. Great for newline substitutions since `sed` is not designed for this and the `sed` syntax for translation involving the `\n` character is convoluted because it has a harder ro read escape sequence for the newline character. For example, if you wanted to output all the windows paths, each other their own line by replacing all instances of a semicolon with a `\n`, in `sed` it would look like much less readable: `path | sed -e $'s/,/\\\n/g'` than using `tr` to do the same thing: `path | tr ; '\n'`.
     - [`tr` command in \*NIX with examples](https://www.geeksforgeeks.org/tr-command-in-unix-linux-with-examples/)
-- Powershell
+- Powershell (check the version in Cmder by typing: `powershell $PSVersionTable`)
+  - IDE
+    - [Setup VSCode to use Powershell](https://docs.microsoft.com/en-us/powershell/scripting/components/vscode/using-vscode?view=powershell-7)
   - Encoding
     - [A good post on utf 8](https://stackoverflow.com/questions/40098771/changing-powershells-default-output-encoding-to-utf-8)
+    - [More on the Powershell default encoding](https://mohitgoyal.co/2017/03/03/understanding-default-encoding-and-change-the-same-in-powershell/)
+    - [Adding and removing keyboard languages with powershell](https://4sysops.com/archives/adding-and-removing-keyboard-languages-with-powershell/)
+  - Error Handling
+    - [https://stackoverflow.com/questions/1142211/try-catch-does-not-seem-to-have-an-effect](https://stackoverflow.com/questions/1142211/try-catch-does-not-seem-to-have-an-effect)
