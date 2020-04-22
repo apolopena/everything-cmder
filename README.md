@@ -49,4 +49,7 @@ Anyone that may have an opinion on how to do things better (optimize) or to add 
   - Error Handling
     - [https://stackoverflow.com/questions/1142211/try-catch-does-not-seem-to-have-an-effect](https://stackoverflow.com/questions/1142211/try-catch-does-not-seem-to-have-an-effect)
     - [Handling DISM.exe errors (external programs)](https://stackoverflow.com/questions/42284314/handle-dism-errors-from-powershell-script)
+    - [Exiting Powershell scripts](https://stackoverflow.com/questions/2022326/terminating-a-script-in-powershell)
+  - __Run a program with elevated permissions from a Powershell script__. This assumes that the user running the script has administrator privileges. __A new cmd terminal window will be opened__. We use cmd /k to keep the new process window open. Pass all the arguments at once in a quoted string after the `/k` . The following example shows the currently installed language packs on the Windows system:
+    - `Start-Process -FilePath cmd -ArgumentList '/k DISM.exe /Online /Get-Intl /English' -Verb RunAs`
 
