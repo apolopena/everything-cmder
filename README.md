@@ -40,9 +40,14 @@ Anyone that may have an opinion on how to do things better (optimize) or to add 
   - __`tr`__: A command line utility for translating or deleting characters. Great for newline substitutions since `sed` is not designed for this and the `sed` syntax for translation involving the `\n` character is convoluted because it has a harder ro read escape sequence for the newline character. For example, if you wanted to output all the windows paths, each other their own line by replacing all instances of a semicolon with a `\n`, in `sed` it would look like much less readable: `path | sed -e $'s/,/\\\n/g'` than using `tr` to do the same thing: `path | tr ; '\n'`.
     - [`tr` command in \*NIX with examples](https://www.geeksforgeeks.org/tr-command-in-unix-linux-with-examples/)
 - Powershell (check the version in Cmder by typing: `powershell $PSVersionTable`)
+  - Tricks
+    - In Cmder, to run powershell in utf8 mode with a custom colorized prompt showing the powershell version number and current directory, just add the following one-liner (alias) to your `user_aliases.cmd` file:
+      - <sub><sup>`ps=powershell -NoExit -Command "function prompt {$ps = """"Powershell UTF8 v$((Get-Host).Version.Major).$((Get-Host).Version.Minor) $($executionContext.SessionState.Path.CurrentLocation)$('>' * ($nestedPromptLevel + 1))""""; Write-Host $ps -NoNewline -ForegroundColor Cyan; return """" """"}; $OutputEncoding = [Console]::OutputEncoding = [Text.UTF8Encoding]::UTF8;"`</sub></sup>
   - IDE
     - [Setup VSCode to use Powershell](https://docs.microsoft.com/en-us/powershell/scripting/components/vscode/using-vscode?view=powershell-7)
   - Encoding
+    - Start a Powershell childprocess instantly as UTF8 (including pipes)
+      - <sub><sup>`Powershell.exe -NoExit -Command "$OutputEncoding = [Console]::OutputEncoding = [Text.UTF8Encoding]::UTF8"`</sup></sub>
     - [A good post on utf 8](https://stackoverflow.com/questions/40098771/changing-powershells-default-output-encoding-to-utf-8)
     - [More on the Powershell default encoding](https://mohitgoyal.co/2017/03/03/understanding-default-encoding-and-change-the-same-in-powershell/)
     - [Adding and removing keyboard languages with powershell](https://4sysops.com/archives/adding-and-removing-keyboard-languages-with-powershell/)
