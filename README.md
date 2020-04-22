@@ -43,6 +43,8 @@ Anyone that may have an opinion on how to do things better (optimize) or to add 
   - Tricks
     - In Cmder, to run powershell in utf8 mode with a custom colorized prompt showing the powershell version number and current directory, just add the following one-liner (alias) to your `user_aliases.cmd` file:
       - <sub><sup>`ps=powershell -NoExit -Command "function prompt {$ps = """"Powershell UTF8 v$((Get-Host).Version.Major).$((Get-Host).Version.Minor) $($executionContext.SessionState.Path.CurrentLocation)$('>' * ($nestedPromptLevel + 1))""""; Write-Host $ps -NoNewline -ForegroundColor Cyan; return """" """"}; $OutputEncoding = [Console]::OutputEncoding = [Text.UTF8Encoding]::UTF8;"`</sub></sup>
+    - Open any control panel item from this [list](https://www.lifewire.com/command-line-commands-for-control-panel-applets-2626060)
+      - `control appwiz.cpl` will open the add/remove programs dialog.
   - IDE
     - [Setup VSCode to use Powershell](https://docs.microsoft.com/en-us/powershell/scripting/components/vscode/using-vscode?view=powershell-7)
   - Encoding
