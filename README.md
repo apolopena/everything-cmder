@@ -54,6 +54,7 @@ Anyone that may have an opinion on how to do things better (optimize) or to add 
     - [More on the Powershell default encoding](https://mohitgoyal.co/2017/03/03/understanding-default-encoding-and-change-the-same-in-powershell/)
     - [Adding and removing keyboard languages with powershell](https://4sysops.com/archives/adding-and-removing-keyboard-languages-with-powershell/)
   - Error Handling
+    - [Managing non-terminating errors](https://devblogs.microsoft.com/powershell/managing-non-terminating-errors/)
     - [https://stackoverflow.com/questions/1142211/try-catch-does-not-seem-to-have-an-effect](https://stackoverflow.com/questions/1142211/try-catch-does-not-seem-to-have-an-effect)
     - [Handling DISM.exe errors (external programs)](https://stackoverflow.com/questions/42284314/handle-dism-errors-from-powershell-script)
     - [Exiting Powershell scripts](https://stackoverflow.com/questions/2022326/terminating-a-script-in-powershell)
