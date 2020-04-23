@@ -33,15 +33,26 @@ Anyone that may have an opinion on how to do things better (optimize) or to add 
       - [Probably the best `sed` guide out there](https://www.grymoire.com/Unix/Sed.html)
       - Practice `sed` in real-time using a [`sed` REPL (sandbox) online editor](https://sed.js.org/).
       - The more formal [GNU `sed` documentation](https://www.gnu.org/software/sed/manual/html_node/Regular-Expressions.html#Regular-Expressions).
-    - One-liners
+    - __One-liners__
       - Count the number of newlines
         - In a file: `sed -n '$=' file.txt`
         - From a pipe: `ls | sed '$='`
   - __`awk`__: Is a text pattern scanning and processing language, which was created by **A**ho, **W**einberger & **K**ernighan. `awk` is mostly used for data extraction and reporting, was built around processing .csv files. `awk` is considered more robust than `sed`. `awk` can do everything that `sed` can do and much more since `awk` is essentially a full fledged programming language complete with system calls, and sophisticated constructs such as if/else, while, do/while, etc.
+    - __Reference__
+      - urls TBD
+    - __One-liners__
+      - Count the number of newlines
+        - In a file: `awk 'END {print NR}' file.txt`
+        - From a pipe: `awk | 'END {print NR}'`
     - Practice `awk` in real-time using an [`awk` REPL (sandbox) online editor](https://awk.js.org/)
   - __`grep`__: Stands for **G**lobal **R**egular **E**xpression **P**rint and is used to search for specific terms in a file. Different from `awk` and `sed`, `grep` cannot add/modify/remove the text in a specific file. But it’s useful when you just want to search and filter out matches.
-    - GNU docs for [`grep` 3.4](https://www.gnu.org/software/grep/manual/grep.html)
-    - [How to prevent grep from printing the same string multiple times](https://askubuntu.com/questions/681649/how-to-prevent-grep-from-printing-the-same-string-multiple-times)
+    - __Reference__
+      - GNU docs for [`grep` 3.4](https://www.gnu.org/software/grep/manual/grep.html)
+      - [How to prevent grep from printing the same string multiple times](https://askubuntu.com/questions/681649/how-to-prevent-grep-from-printing-the-same-string-multiple-times)
+    - __One-liners__
+      - Count the number of newlines
+        - In a file: `grep -c "" file.txt`
+        - From a pipe: `ls | grep -c ""`
   - __`tr`__: A command line utility for translating or deleting characters. Great for newline substitutions since `sed` is not designed for this and the `sed` syntax for translation involving the `\n` character is convoluted because it has a harder ro read escape sequence for the newline character. For example, if you wanted to output all the windows paths, each other their own line by replacing all instances of a semicolon with a `\n`, in `sed` it would look like much less readable: `path | sed -e $'s/,/\\\n/g'` than using `tr` to do the same thing: `path | tr ; '\n'`.
     - [`tr` command in \*NIX with examples](https://www.geeksforgeeks.org/tr-command-in-unix-linux-with-examples/)
 - Powershell (check the version in Cmder by typing: `powershell $PSVersionTable`)
