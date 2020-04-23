@@ -29,9 +29,14 @@ Anyone that may have an opinion on how to do things better (optimize) or to add 
     - [TLDR pages: Simplified and community-driven man pages](https://tldr.sh/)
       - TLDR pages give multiple usage examples of each \*NIX style command that the console supports.
   - __`sed`__: Stands for **S**tream **E**ditor. `sed` works with streams of characters for searching, filtering and text processing and despite its power, `sed` is considered a 'simpleton' when compared to `awk`. It is recommended to use `sed` for simple regex type operations and one-liners as `sed` syntax is more terse and compact than `awk` syntax. Complex multiline `sed` scripts can look noisy and be harder to read than `awk` programs.
-    - [Probably the best `sed` guide out there](https://www.grymoire.com/Unix/Sed.html)
-    - Practice `sed` in real-time using a [`sed` REPL (sandbox) online editor](https://sed.js.org/).
-    - The more formal [GNU `sed` documentation](https://www.gnu.org/software/sed/manual/html_node/Regular-Expressions.html#Regular-Expressions).
+    - __Reference__
+      - [Probably the best `sed` guide out there](https://www.grymoire.com/Unix/Sed.html)
+      - Practice `sed` in real-time using a [`sed` REPL (sandbox) online editor](https://sed.js.org/).
+      - The more formal [GNU `sed` documentation](https://www.gnu.org/software/sed/manual/html_node/Regular-Expressions.html#Regular-Expressions).
+    - One-liners
+      - Count the number of newlines
+        - In a file: `sed -n '$=' file.txt`
+        - From a pipe: `ls | sed '$='`
   - __`awk`__: Is a text pattern scanning and processing language, which was created by **A**ho, **W**einberger & **K**ernighan. `awk` is mostly used for data extraction and reporting, was built around processing .csv files. `awk` is considered more robust than `sed`. `awk` can do everything that `sed` can do and much more since `awk` is essentially a full fledged programming language complete with system calls, and sophisticated constructs such as if/else, while, do/while, etc.
     - Practice `awk` in real-time using an [`awk` REPL (sandbox) online editor](https://awk.js.org/)
   - __`grep`__: Stands for **G**lobal **R**egular **E**xpression **P**rint and is used to search for specific terms in a file. Different from `awk` and `sed`, `grep` cannot add/modify/remove the text in a specific file. But it’s useful when you just want to search and filter out matches.
