@@ -4,6 +4,18 @@ Rather than list my opinion of all the pros and cons of [Cmder](https://cmder.ne
 # Why not Powershell?
 If you are working in the Windows environment then why use Unix style tools at all? Personally I find the [Powershell](https://en.wikipedia.org/wiki/PowerShell) syntax, learning curve and [encoding caveats](https://stackoverflow.com/questions/40098771/changing-powershells-default-output-encoding-to-utf-8) a bit of a hurdle and just not as versatile as \*NIX tools. At times I do find myself working with Powershell in Cmder and I will say that the more I learn the better off I am because of it. I will be sharing what I have learned about Powershell here on this page and you will find some powershell scripts in the repository.
 __TLDR;__ Powershell is awesome and can be integrated with Cmder. A well rounded scripter will be fluent in as many tools as possible.
+
+# Getting True Colors (24-bit color)
+Not that anyone will ever really need all 16 million colors in their terminal at once, however being able to choose from a wider pallette of colors has its advantages and it is just plain more fun.
+Cmder does NOT support true color. The bash shell that comes with Cmder also does NOT support true color. If you try to use powershell with Cmder as its terminal you will NOT get true color. If you want true color in your terminal on Windows or WSL there many ways to do it and there can be many caveats as well. Powershell is a shell and scripting language with true color support so you can use 24-bit color escape sequences and get any color you want but typically not when running powershell in the Cmder standalone console/terminal/terminal emulator. There are bash shells running in WSL for windows such as Ubuntu's bash that you can use but they have a decent amount of weight to them such as installing an entire Linux distro.
+
+Long story short true color support is pretty much dictacted by your console/terminal emulator and shell combination. I have found the following combinations to work easily for true color without dealing with WSL bash.
+  - Straight powershell
+  - VSCode terminal with powershell
+  - VSCode terminal running Cmder with powershell
+  - [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal-preview/9n0dx20hk701) with powershell
+  - [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal-preview/9n0dx20hk701) running Cmder with powershell
+
 # How to Use This Repository
 It suggested that you perouse this document however you see fit. You may also download or copy and paste any portion of any of the files in this repository to fit your needs. Much of this document may be crafted for beginner and intermediate developers in the form of linear step lists, however I am sure that expert developers can probably gleam a few gems from this repository.
 
