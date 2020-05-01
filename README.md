@@ -45,6 +45,7 @@ Anyone that may have an opinion on how to do things better (optimize) or to add 
       - [Probably the best `sed` guide out there](https://www.grymoire.com/Unix/Sed.html)
       - Practice `sed` in real-time using a [`sed` REPL (sandbox) online editor](https://sed.js.org/).
       - The more formal [GNU `sed` documentation](https://www.gnu.org/software/sed/manual/html_node/Regular-Expressions.html#Regular-Expressions).
+      - [converting to uppercase lowercase in sed](https://timmurphy.org/2013/02/24/converting-to-uppercase-lowercase-in-sed/)
     - __One-liners__
       - Count the number of newlines
         - In a file: `sed -n '$=' file.txt`
